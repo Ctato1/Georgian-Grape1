@@ -1,0 +1,35 @@
+.common{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 65px;
+     background: linear-gradient(rgba(0, 0, 0, 0.297), rgba(0, 0, 0, 0.564)),
+    url("../images/common.jpg") no-repeat center center;
+    padding: 100px 0px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.common h1{
+    color: #fff !important;
+}
+
+.select{
+    margin: 70px 0;
+
+    width: 100%;
+    height: 100px;
+    background: #87878754;
+}
+select{
+    width: 50%;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    border: 1px solid grey;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
