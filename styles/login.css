@@ -1,0 +1,51 @@
+.menu{
+   margin-bottom: 0 !important;
+}
+
+.gradient-custom-3 {
+  /* fallback for old browsers */
+  background: #f9122d;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(235, 11, 11, 0.5),
+    rgba(196, 9, 9, 0.5)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    #D38C4D,
+    #5f0e17
+  );
+}
+.gradient-custom-4 {
+  /* fallback for old browsers */
+  background: #84fab0;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(210, 51, 11),
+    rgba(143, 211, 244, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #5f0e17, #db283da3);
+}
+
+.btn a,
+.btn a:hover {
+  text-decoration: none;
+  background: transparent;
+  padding: 0px;
+  border-radius: 0px;
+}
+.btn{
+    transition: .3s ease-in-out !important;
+}
+.btn:hover {
+    transform: scale(1.1);
+
+}
