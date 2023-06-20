@@ -19,11 +19,11 @@
       rel="stylesheet"
     />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-    crossorigin="anonymous"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <script src="../main.js" defer></script>
     <title>Ducho's Wine</title>
   </head>
@@ -39,7 +39,7 @@
           <ul class="menu">
             <a href="../index.html">Home</a>
             <a href="../pages/wines.html" class="active">Wines</a>
-            <a href="#">Favorites</a>
+            <a href="../pages/favorites.html">Favorites</a>
           </ul>
         </div>
 
@@ -48,8 +48,8 @@
             <img src="../images/user.png" />
 
             <div class="profile__actions">
-              <a href="pages/login.html">Login</a>
-              <a href="pages/signup.html">SignUp</a>
+              <a href="../pages/login.html">Login</a>
+              <a href="../pages/signup.html">SignUp</a>
             </div>
           </div>
           <div class="hamburger-icon">
@@ -67,96 +67,22 @@
     </div>
     <!-- Select section -->
 
-
     <div class="select">
-        <select>
-            <option value="red">Dry Red</option>
-            <option value="white">Dry White</option>
-            <option value="rose">Dry Rose</option>
-        </select>
-        <input type="text">
+      <select onchange="changeItem()" id="mySelect">
+        <option value="all" >All Type</option>
+        <option value="dry red">Dry Red</option>
+        <option value="dry white">Dry White</option>
+        <option value="dry rose">Dry Rose</option>
+      </select>
+      <input type="text" />
     </div>
-
 
     <!-- Wine types -->
 
     <div class="type mt-5">
       <h4>Category</h4>
       <!-- აქ ჩაწერე დბ -->
-      <div class="type__red">
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-        <div class="type__card">
-          <img src="../images/grape.PNG" alt="card" />
-          <div class="type__card-info">
-            <h5>Name</h5>
-            <p>Info</p>
-            <p>Year</p>
-          </div>
-        </div>
-      </div>
+      <div class="type__red" id="card-div"></div>
     </div>
 
     <footer class="footer">

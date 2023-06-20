@@ -1,3 +1,7 @@
+.menu{
+    margin: 0;
+}
+
 .common{
     width: 100%;
     height: 250px;
@@ -22,14 +26,44 @@
 
     width: 100%;
     height: 100px;
-    background: #87878754;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 select{
     width: 50%;
-    margin-top: 10px !important;
-    margin-left: 10px !important;
     border: 1px solid grey;
     outline: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.select input{
+    width: 30%;
+    padding: 5px 9px;
+    border: 1px solid #c1c1c1;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+/* card */
+
+#card-div .type__card{
+    position: relative;
+}
+#card-div .type__card p{
+    font-size: .8rem;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#card-div .type__card .type__card-price{
+    font-size: 1.4rem !important;
+    position: absolute;
+    bottom: 0;
 }

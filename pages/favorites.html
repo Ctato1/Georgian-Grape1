@@ -9,38 +9,47 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="styles/wines.css">
+    <link rel="stylesheet" href="../main.css" />
+
+    <link rel="stylesheet" href="../styles/favorites.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <script src="main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="../main.js" defer></script>
     <title>Ducho's Wine</title>
   </head>
   <body>
     <header class="header">
       <div class="nav__wrapper">
         <div class="logo">
-          <img src="images/logo.png" alt="logo" />
+          <a href="../index.html"
+            ><img src="../images/logo.png" alt="logo"
+          /></a>
         </div>
         <div class="navigation">
           <ul class="menu">
-            <a href="./index.html" class="active">Home</a>
-            <a href="./pages/wines.html">Wines</a>
-            <a href="./pages/favorites.html">Favorites</a>
+            <a href="../index.html">Home</a>
+            <a href="../pages/wines.html">Wines</a>
+            <a href="../pages/favorites.html" class="active">Favorites</a>
           </ul>
         </div>
 
         <div class="nav_icons">
           <div class="profile">
-            <img src="images/user.png" />
+            <img src="../images/user.png" />
 
             <div class="profile__actions">
-              <a href="pages/login.html">Login</a>
-              <a href="pages/signup.html">SignUp</a>
+              <a href="../pages/login.html">Login</a>
+              <a href="../pages/signup.html">SignUp</a>
             </div>
           </div>
           <div class="hamburger-icon">
@@ -52,54 +61,33 @@
       </div>
     </header>
 
-    <!-- Hero -->
-    <div class="hero">
-      <div class="hero__info">
-        <span>Georgian Grape Products in 2023</span>
-        <h1>Georgian Grape</h1>
-        <p>KHASHMIS SAPERAVI</p>
-        <p>TAVKVERI</p>
-        <p>CHINURI – GORULI MTSVANE</p>
-        <p>RKATSITELI</p>
-        <button>Shop Now</button>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero-img.png" alt="Logo" />
-      </div>
+    <!-- Common Section -->
+    <div class="common">
+      <h1>Favorites</h1>
     </div>
+    <!-- Select section -->
 
-    <!-- Companies -->
-
-    <div class="companies">
-      <h4>Companies</h4>
-      <div class="companies__box">
-        <img src="images/grape.PNG" alt="Logo" />
-        <div class="companies__box-info">
-          <h5>Georgian Grape</h5>
-          <p>
-            "Georgian Grape" winery is based in the Caucasus International
-            University of Viticulture and Winemaking on the basis of the faculty
-            and combines both educational and production facilities.
-          </p>
-          <br />
-          <p>Tbilisi,Rustaveli st. N2</p>
+    <div class="favorites">
+      <div class="favorite__item">
+        <h3 class="mb-5">No Products added!</h3>
+      </div>
+      <div class="favorite__payment">
+        <div class="subtotal">
+          <span>Subtotal</span>
+          <span>$ 0</span>
         </div>
-      </div>
-    </div>
-
-    <!-- Wine types -->
-
-    <div class="type">
-      <h4>Dry Red Wine Type</h4>
-      <!-- აქ ჩაწერე დბ -->
-      <div class="type__red" id="card-div">
- 
+        <p>taxes and shipping will calculate in checkout</p>
+        <br />
+        <div class="btn__section">
+          <button class="btn">Continue Shopping</button>
+          <button class="btn">Checkout</button>
+        </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="footer__logo">
-        <img src="images/grape.PNG" alt="Logo" />
+        <img src="../images/grape.PNG" alt="Logo" />
       </div>
       <div class="footer__links">
         <h5>Links</h5>
@@ -123,6 +111,5 @@
       src="https://kit.fontawesome.com/eb28b1c89b.js"
       crossorigin="anonymous"
     ></script>
-   
   </body>
 </html>
